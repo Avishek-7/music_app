@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.port": 8000,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "files.associations": {
+        "*.html": "html",
+        "*.css": "css",
+        "*.js": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "html.format.indentInnerHtml": true,
+    "css.validate": true,
+    "javascript.validate.enable": true
+}

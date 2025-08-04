@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Development Server",
+            "type": "shell",
+            "command": "python3",
+            "args": ["-m", "http.server", "8000"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "detail": "Start a local HTTP server on port 8000"
+        },
+        {
+            "label": "Open in Browser",
+            "type": "shell",
+            "command": "open",
+            "args": ["http://localhost:8000"],
+            "group": "test",
+            "dependsOn": "Start Development Server",
+            "problemMatcher": [],
+            "detail": "Open the music player in default browser"
+        }
+    ]
+}

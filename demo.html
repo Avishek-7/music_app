@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .demo-container {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .launch-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        .launch-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 Modern Music Player Demo</h1>
+    
+    <div class="demo-container">
+        <h2>Welcome to the Music Player!</h2>
+        <p>This is a fully functional, responsive music player built with HTML5, CSS3, and JavaScript. It demonstrates modern web development techniques and provides an excellent user experience across all devices.</p>
+        
+        <a href="index.html" class="launch-btn">🚀 Launch Music Player</a>
+    </div>
+
+    <h2>✨ Key Features</h2>
+    <div class="feature-list">
+        <div class="feature-item">
+            <h3>🎵 Audio Playback</h3>
+            <p>Full control over audio with play, pause, seek, and volume controls using HTML5 Audio API.</p>
+        </div>
+        
+        <div class="feature-item">
+            <h3>📋 Playlist Management</h3>
+            <p>Add, remove, and organize songs. Supports drag & drop file upload for easy playlist creation.</p>
+        </div>
+        
+        <div class="feature-item">
+            <h3>🔀 Advanced Controls</h3>
+            <p>Shuffle and repeat modes, previous/next navigation, and comprehensive keyboard shortcuts.</p>
+        </div>
+        
+        <div class="feature-item">
+            <h3>📱 Responsive Design</h3>
+            <p>Optimized for all screen sizes - desktop, tablet, and mobile with touch-friendly controls.</p>
+        </div>
+        
+        <div class="feature-item">
+            <h3>🎨 Modern UI</h3>
+            <p>Beautiful gradient backgrounds, glass morphism effects, and smooth animations.</p>
+        </div>
+        
+        <div class="feature-item">
+            <h3>⌨️ Keyboard Support</h3>
+            <p>Full keyboard navigation with shortcuts for all major functions.</p>
+        </div>
+    </div>
+
+    <h2>🎯 How to Use</h2>
+    <div class="demo-container">
+        <ol>
+            <li><strong>Launch the Player:</strong> Click the launch button above</li>
+            <li><strong>Add Music:</strong> Click "Add Song" and select your audio files</li>
+            <li><strong>Play Music:</strong> Click any song in the playlist to start playing</li>
+            <li><strong>Control Playback:</strong> Use the control buttons or keyboard shortcuts</li>
+            <li><strong>Enjoy:</strong> Experience smooth, responsive music playback!</li>
+        </ol>
+    </div>
+
+    <h2>🎧 Supported Formats</h2>
+    <div class="demo-container">
+        <p>The player supports all major audio formats:</p>
+        <ul>
+            <li><strong>MP3</strong> - Most common format</li>
+            <li><strong>WAV</strong> - High quality uncompressed</li>
+            <li><strong>OGG</strong> - Open source format</li>
+            <li><strong>M4A</strong> - Apple audio format</li>
+        </ul>
+    </div>
+
+    <h2>⌨️ Keyboard Shortcuts</h2>
+    <div class="demo-container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+            <div><strong>Spacebar:</strong> Play/Pause</div>
+            <div><strong>← →:</strong> Previous/Next</div>
+            <div><strong>↑ ↓:</strong> Volume Up/Down</div>
+            <div><strong>S:</strong> Toggle Shuffle</div>
+            <div><strong>R:</strong> Toggle Repeat</div>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <h3>🔧 Technical Details</h3>
+        <p>This project showcases:</p>
+        <ul>
+            <li>Modern JavaScript ES6+ features</li>
+            <li>CSS3 animations and transitions</li>
+            <li>HTML5 Audio API integration</li>
+            <li>Responsive design principles</li>
+            <li>File handling and drag & drop</li>
+            <li>Event-driven architecture</li>
+        </ul>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #ddd;">
+        <p>🎵 Modern Music Player - A comprehensive web development project</p>
+        <p>Built with ❤️ using HTML5, CSS3, and JavaScript</p>
+    </footer>
+</body>
+</html>

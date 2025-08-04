@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="music-player">
+        <!-- Header -->
+        <header class="player-header">
+            <h1><i class="fas fa-music"></i> Music Player</h1>
+        </header>
+
+        <!-- Main Player Container -->
+        <div class="player-container">
+            <!-- Album Art Section -->
+            <div class="album-art-container">
+                <div class="album-art">
+                    <img id="albumArt" src="default-album.svg" alt="Album Art">
+                    <div class="vinyl-effect"></div>
+                </div>
+            </div>
+
+            <!-- Song Information -->
+            <div class="song-info">
+                <h2 id="songTitle">Select a song to play</h2>
+                <p id="artistName">Unknown Artist</p>
+                <p id="albumName">Unknown Album</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                    <input type="range" id="progressSlider" min="0" max="100" value="0" class="progress-slider">
+                </div>
+                <span id="totalTime">0:00</span>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="controls">
+                <button id="prevBtn" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="playPauseBtn" class="control-btn play-pause"><i class="fas fa-play"></i></button>
+                <button id="nextBtn" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="shuffleBtn" class="control-btn"><i class="fas fa-random"></i></button>
+                <button id="repeatBtn" class="control-btn"><i class="fas fa-redo"></i></button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-container">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50" class="volume-slider">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist-container">
+            <div class="playlist-header">
+                <h3><i class="fas fa-list"></i> Playlist</h3>
+                <div class="playlist-controls">
+                    <button id="addSongBtn" class="add-song-btn">
+                        <i class="fas fa-plus"></i> Add Song
+                    </button>
+                    <button id="clearPlaylistBtn" class="clear-playlist-btn">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                </div>
+            </div>
+            <ul id="playlist" class="playlist">
+                <!-- Playlist items will be added here dynamically -->
+            </ul>
+        </div>
+
+        <!-- File Upload Modal -->
+        <div id="uploadModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Songs to Playlist</h2>
+                <div class="upload-area">
+                    <input type="file" id="audioFiles" multiple accept="audio/*">
+                    <div class="upload-text">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Choose audio files or drag & drop here</p>
+                        <p class="file-types">Supported: MP3, WAV, OGG, M4A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio Element -->
+        <audio id="audioPlayer" preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
