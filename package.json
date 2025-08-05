@@ -4,10 +4,10 @@
   "description": "A responsive and modern web-based music player built with HTML5, CSS3, and JavaScript",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "start-node": "npx http-server -p 8000 -o",
-    "dev": "python3 -m http.server 8000",
-    "serve": "npx serve -s . -p 8000"
+    "start": "python -m http.server 3000",
+    "start-node": "npx http-server -p 3000 -o",
+    "dev": "python3 -m http.server 3000",
+    "serve": "npx serve -s . -p 3000"
   },
   "keywords": [
     "music-player",
