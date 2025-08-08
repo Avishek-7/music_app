@@ -2,6 +2,10 @@
 
 A responsive and feature-rich web-based music player built with HTML5, CSS3, and vanilla JavaScript. This project demonstrates modern web development techniques and provides an intuitive music listening experience.
 
+![Modern Music Player Interface](./screenshots/main.png)
+
+*Complete music player interface with modern glass morphism design and full audio controls*
+
 ## 🌟 Features
 
 ### Core Functionality
